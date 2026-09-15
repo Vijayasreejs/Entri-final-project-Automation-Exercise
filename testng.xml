@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite"  >
+  <listeners>
+  <listener class-name="Utils.ScreenshotList"/>
+  </listeners>
+  <test name="Chrome Execution Test">
+  <parameter name="implicitWait" value="10"/>
+ <classes>
+  <class name="tests.HomeTest"/>
+<class name="tests.LoginTest"/>
+<class name="tests.NewuserRegisterTest"/>
+ <class name="tests.ProductTest" />
+ <class name= "tests.CartTest"/>
+  <class name= "tests.CheckoutTest"/>
+   <class name= "tests.PaymentTest"/>
+    <class name= "tests.TestCaseTest"/>
+      <class name= "tests.APITest"/>
+        <class name= "tests.TutorialsTest"/>
+          <class name= "tests.ContactUsTest"/>
+  </classes>
+  </test>
+</suite> <!-- AutomationSuite -->

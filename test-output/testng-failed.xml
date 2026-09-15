@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utils.ScreenshotList"/>
+  </listeners>
+  <test thread-count="5" name="Chrome Execution Test(failed)">
+    <parameter name="implicitWait" value="10"/>
+    <classes>
+      <class name="tests.CheckoutTest">
+        <methods>
+          <include name="initPages"/>
+          <include name="setup"/>
+          <include name="verifySessionTimeoutRestrictsOrderSubmission" invocation-numbers="0"/>
+          <include name="setupTestState"/>
+          <include name="verifyAccountAddressUpdateReflectsOnCheckout" invocation-numbers="0"/>
+          <include name="verifyGuestUserCheckoutPromptModal"/>
+          <include name="clearCartAfterTest"/>
+          <include name="verifyCategoryBreadcrumbNavigationInReviewTable" invocation-numbers="0"/>
+          <include name="verifyOversizedOrderCommentHandling" invocation-numbers="0"/>
+          <include name="drop"/>
+          <include name="verifyDirectCheckoutUrlAccessWithoutItems" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.CheckoutTest -->
+      <class name="tests.TutorialsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="VTTC_025_VerifyExternalWebsiteLinkOpensInNewTab"/>
+          <include name="VTTC_023_VerifyChannelHeaderLogoNotFallbackIcon"/>
+          <include name="setup"/>
+          <include name="ensureVideoTurialsPage"/>
+          <include name="drop"/>
+          <include name="VTTC_024_VerifyLegacyChannelUrlRedirection"/>
+        </methods>
+      </class> <!-- tests.TutorialsTest -->
+      <class name="tests.ProductTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verify_granular_filtering_options"/>
+          <include name="verify_quick_view_and_wishlis"/>
+          <include name="verify_search_typo_tolerance_or_handling"/>
+          <include name="initPage"/>
+          <include name="verify_add_quantity_exceeding_maximum_allowed_limit"/>
+          <include name="verify_review_score_breakdown_and_star_filtering"/>
+          <include name="verify_breadcrumb_structure_and_functional_navigation"/>
+          <include name="verify_add_to_cart_negative_quantity"/>
+          <include name="navigateToProducts"/>
+          <include name="verify_sorting_and_pagination_controls"/>
+          <include name="verify_irrelevant_categories_display"/>
+          <include name="verify_modify_quantity_on_product_card_tile"/>
+          <include name="drop"/>
+          <include name="verify_hero_image_updates_on_thumbnail_interaction"/>
+          <include name="verify_add_to_cart_zero_quantity"/>
+          <include name="verify_quantity_selector_on_grid_cards"/>
+          <include name="verify_out_of_stock_visual_indicators_and_disabled_controls"/>
+        </methods>
+      </class> <!-- tests.ProductTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="initPage"/>
+          <include name="verifyForgotPasswordRecoveryFlow"/>
+          <include name="verify_field_blur_behavior"/>
+          <include name="drop"/>
+          <include name="ensureLoginPage"/>
+          <include name="verify_password_visibility_toggle"/>
+          <include name="verifyMissingAccountLockingMechanism" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyOversizedFileUploadBehavior"/>
+          <include name="verifyImproperlyFormattedEmailReaction"/>
+          <include name="navigateToContactUs"/>
+          <include name="initPage"/>
+          <include name="verifySubjectInputMaxLengthConstraint"/>
+          <include name="verifyContactUsAutoPopulationForLoggedInUser"/>
+          <include name="verifyValidationOnMissingRequiredFields"/>
+          <include name="verifyBlankFormSubmissionTriggersNameValidation"/>
+          <include name="verifyDragAndDropFileUpload"/>
+          <include name="drop"/>
+          <include name="verifySupportTicketIdGenerationOnSubmission"/>
+          <include name="verifyMessageFieldMaxLengthAndCounter"/>
+          <include name="verifyOrderCategoryRequiresOrderID"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.APITest">
+        <methods>
+          <include name="test_PutToALLBrandList"/>
+          <include name="setup"/>
+          <include name="ensureApiPage"/>
+          <include name="test_LoginwithoutEmail"/>
+          <include name="test_LoginValid"/>
+          <include name="test_NewUserCreate"/>
+          <include name="test_PostLoginInvalid"/>
+          <include name="initPage"/>
+          <include name="test_searchProduct"/>
+          <include name="test_PostToAllProductsList"/>
+          <include name="test_UpdateUser"/>
+          <include name="test_searchProductwithoutParameter"/>
+          <include name="drop"/>
+          <include name="test_deleteUserReg"/>
+          <include name="test_GetUserAcc"/>
+        </methods>
+      </class> <!-- tests.APITest -->
+      <class name="tests.CartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verify_price_breakdown_fee_transparency"/>
+          <include name="verify_save_for_later_feature_visibility"/>
+          <include name="verify_double_click_product_image_navigation"/>
+          <include name="verify_delivery_pincode_availability_widget"/>
+          <include name="initPage"/>
+          <include name="verify_cart_recommended_items_visibility"/>
+          <include name="verify_cart_persistence_after_login_logout" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="verify_cart_quantity_dropdown_visibility"/>
+          <include name="drop"/>
+          <include name="verify_checkout_unauthenticated_user"/>
+        </methods>
+      </class> <!-- tests.CartTest -->
+      <class name="tests.TestCaseTest">
+        <methods>
+          <include name="setup"/>
+          <include name="test_VerifyStepsVisibilityPersistsOnRefresh"/>
+          <include name="verify_RedInstructionText_SentenceCapitalization"/>
+          <include name="drop"/>
+          <include name="verify_DiscoverMore_LinkRedirection"/>
+          <include name="ensureHomePage"/>
+          <include name="verifyFooterSubscriptionPersistenceOnRefresh"/>
+          <include name="initPages"/>
+        </methods>
+      </class> <!-- tests.TestCaseTest -->
+      <class name="tests.HomeTest">
+        <methods>
+          <include name="testSubscriptionEmailValidation" invocation-numbers="2"/>
+          <include name="setup"/>
+          <include name="verifyDynamicSlideOutCartDrawer"/>
+          <include name="initPage"/>
+          <include name="drop"/>
+          <include name="verifyIrrelevantAndDuplicateDiscoverMorePlacement"/>
+          <include name="verifyTopSearchBarPredictiveDropdown"/>
+          <include name="verifyAddToCartNavigationIconCount"/>
+          <include name="ensureHomePage"/>
+        </methods>
+      </class> <!-- tests.HomeTest -->
+      <class name="tests.NewuserRegisterTest">
+        <methods>
+          <include name="setup"/>
+          <include name="initPages"/>
+          <include name="verify_form_tab_navigation_order"/>
+          <include name="verify_mobilenumber_numeric_validation"/>
+          <include name="signuptest"/>
+          <include name="verify_name_numeric_rejection"/>
+          <include name="verify_state_city_numeric_input_rejection"/>
+          <include name="verify_password_visibility_toggle"/>
+          <include name="verify_password_length_constraint"/>
+          <include name="drop"/>
+          <include name="verify_mismatched_dob_leap_year_combination"/>
+          <include name="verify_lowercase_text_capitalization_handling"/>
+          <include name="verify_rapid_double_submission_prevention" invocation-numbers="0"/>
+          <include name="verify_zipcode_alphanumeric_handling"/>
+          <include name="verify_password_strength_indicator"/>
+        </methods>
+      </class> <!-- tests.NewuserRegisterTest -->
+      <class name="tests.PaymentTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyMissingCashOnDeliveryOption" invocation-numbers="0"/>
+          <include name="verifyCvcLengthValidation" invocation-numbers="0"/>
+          <include name="initPages"/>
+          <include name="verifyUnauthenticatedOrderBlockedOnSessionExpiration" invocation-numbers="0"/>
+          <include name="verifyTotalPricePresentAndFractionalCurrencyPreserved" invocation-numbers="0"/>
+          <include name="verifyInvalidExpirationMonthBlocksSubmission" invocation-numbers="0"/>
+          <include name="verifyNetBankingOptionAvailability" invocation-numbers="0"/>
+          <include name="verifyScriptTagSanitization" invocation-numbers="0"/>
+          <include name="clearCartAfterTest"/>
+          <include name="verifyCardFieldsAutocompleteAndMaskingSecurity" invocation-numbers="0"/>
+          <include name="verifyYearInputMaxLengthConstraint" invocation-numbers="0"/>
+          <include name="verifyEMAndBNPLOptionsPresence" invocation-numbers="0"/>
+          <include name="verifyBrandLogoRedirectsToHomeAndMaintainsSession" invocation-numbers="0"/>
+          <include name="verifyNonNumericCardNumberHandling" invocation-numbers="0"/>
+          <include name="setupTestState"/>
+          <include name="verifyNonAlphabeticInputSanitization" invocation-numbers="0"/>
+          <include name="raiseBugForMissingUpiPaymentOptions" invocation-numbers="0"/>
+          <include name="drop"/>
+          <include name="verifyDirectAccessToPaymentDoneFails" invocation-numbers="0"/>
+          <include name="verifyExpiredCardDatePaymentFails" invocation-numbers="0"/>
+          <include name="verifyMissing3DSecureOTPChallenge" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.PaymentTest -->
+    </classes>
+  </test> <!-- Chrome Execution Test(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
